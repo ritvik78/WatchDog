@@ -1,4 +1,4 @@
-<h1 align="center" fas fa-dog>WatchDog</h1>
+<h1 align="center">WatchDog</h1>
 <p>
 WATCHDOG represents a groundbreaking approach to content moderation on social media platforms, specifically designed to address the growing concern of verbal abuse in Hindi, Hinglish, and other Indic languages. The system operates as an intelligent algorithm that automatically detects and flags abusive content on platforms such as YouTube and Instagram Reels, ensuring a safer digital environment for users, particularly younger demographics.
 </p>
