@@ -1,8 +1,13 @@
 <h1 align="center">WatchDog</h1>
+<p>
 WATCHDOG represents a groundbreaking approach to content moderation on social media platforms, specifically designed to address the growing concern of verbal abuse in Hindi, Hinglish, and other Indic languages. The system operates as an intelligent algorithm that automatically detects and flags abusive content on platforms such as YouTube and Instagram Reels, ensuring a safer digital environment for users, particularly younger demographics.
-
+</p>
+<p>
 The core functionality of WATCHDOG revolves around its multimodal detection capabilities, combining advanced Natural Language Processing techniques with sophisticated audio analysis. The system transcribes currently playing media into text and analyzes it using state-of-the-art NLP algorithms to identify potentially offensive language patterns. What sets WATCHDOG apart from conventional content moderation systems is its ability to understand context, cultural nuances, and linguistic variations specific to Indian languages.
-
+</p>
+<p>
 Beyond textual analysis, WATCHDOG incorporates advanced audio processing features that examine speech patterns including pitch modulation, tone variations, and frequency changes. This multimodal approach enables the system to distinguish between content intended as satire or humor versus genuine hate speech or abuse. The audio analysis component can also detect non-verbal aggressive indicators and inappropriate auditory signals that may accompany abusive content.
-
+</p>
+<p>
 The system is designed with scalability and adaptability in mind, featuring a comprehensive feedback mechanism that allows for continuous learning and improvement. When potentially offensive content is detected, WATCHDOG automatically flags it with an appropriate content warning, such as an 18+ tag, thereby enabling users to make informed decisions about their content consumption while preserving freedom of expression for content creators.
+</p>
