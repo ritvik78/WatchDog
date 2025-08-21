@@ -1,0 +1,115 @@
+{
+  "name": "Detection",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string",
+      "description": "The transcribed text content that was flagged."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL of the source media (e.g., YouTube video)."
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "YouTube",
+        "Instagram",
+        "Twitter",
+        "Manual Input",
+        "Audio Upload",
+        "Other"
+      ],
+      "description": "The social media platform where the content originated."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Flagged",
+        "Reviewed - Safe",
+        "Reviewed - Abusive"
+      ],
+      "default": "Flagged",
+      "description": "The current review status of the detection."
+    },
+    "confidence_score": {
+      "type": "number",
+      "description": "The model's confidence in the detection (0 to 1)."
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "Hindi",
+        "Punjabi",
+        "Hinglish",
+        "English",
+        "Other"
+      ],
+      "description": "The detected language of the content."
+    },
+    "detection_type": {
+      "type": "string",
+      "enum": [
+        "Explicit",
+        "Sarcasm",
+        "Hate Speech",
+        "Aggressive Tone",
+        "None"
+      ],
+      "description": "The type of abuse detected."
+    },
+    "analysis_mode": {
+      "type": "string",
+      "enum": [
+        "Text Only",
+        "Audio Only",
+        "Multimodal (Text + Audio)"
+      ],
+      "description": "The type of analysis performed on the content."
+    },
+    "audio_features": {
+      "type": "object",
+      "properties": {
+        "pitch_variation": {
+          "type": "number",
+          "description": "Pitch modulation score (0 to 1)"
+        },
+        "tone_aggressiveness": {
+          "type": "number",
+          "description": "Aggressive tone detection score (0 to 1)"
+        },
+        "speaking_rate": {
+          "type": "number",
+          "description": "Words per minute"
+        },
+        "emotion_detected": {
+          "type": "string",
+          "enum": [
+            "Neutral",
+            "Angry",
+            "Aggressive",
+            "Sarcastic",
+            "Happy",
+            "Sad"
+          ],
+          "description": "Detected emotion from speech patterns"
+        }
+      }
+    },
+    "text_confidence": {
+      "type": "number",
+      "description": "Confidence score from text analysis alone (0 to 1)"
+    },
+    "audio_confidence": {
+      "type": "number",
+      "description": "Confidence score from audio analysis alone (0 to 1)"
+    }
+  },
+  "required": [
+    "content",
+    "platform",
+    "confidence_score",
+    "analysis_mode"
+  ]
+}
